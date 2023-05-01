@@ -1,4 +1,4 @@
-# Is it workday?
+# Is it business day?
 Script for checking is month's XXth day a workday.
 
 The script takes current date, forms a whole business day calendar from the ongoing month and checks what is the fourth business day of the month.
@@ -10,6 +10,7 @@ Uses pandas and holidays libraries.
   - Takes current date and compares it whether it is a XXth workday
   - Handles holidays, supports different regional holiday calendars
   - Useful for example for monthly business-critical automation scripts which always happen at certain time
+  - Debug file for testing the script
 
 # Example
 Assume today is 16th February 2023 - the script checks that current month's fourth business day is 6th February.
