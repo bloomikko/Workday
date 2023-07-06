@@ -1,5 +1,9 @@
-# Almost practically the same as the production version (see documentation @ 4thworkday.py file)
-# Debugging-wise, addition of iterating through 200 next months to verify the fourth business day from several results
+"""
+Almost practically the same as the production version
+(see documentation @ 4thworkday.py file).
+Debugging-wise, addition of iterating through 200 next months
+to verify the fourth business day from several results.
+"""
 
 import pandas as pd
 import datetime
@@ -18,9 +22,8 @@ for td in test_dates:
     for date in holidays.Finland(years=td.year).items():
         fin_holidays.append(str(date[0]))
 
-    full_current_business_month = pd.bdate_range(start_date, end_date, freq="C", holidays = fin_holidays)
+    full_current_business_month = pd.bdate_range(
+        start_date, end_date, freq="C", holidays=fin_holidays
+    )
     fourth_business_day = full_current_business_month[3].date()
-    print(
-        f"{td.month}/{td.year}\n"
-        f"Fourth business day: {fourth_business_day}\n"
-        )
+    print(f"{td.month}/{td.year}\n" f"Fourth business day: {fourth_business_day}\n")
