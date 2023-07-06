@@ -4,7 +4,6 @@ Almost practically the same as the production version
 Debugging-wise, addition of iterating through 200 next months
 to verify the fourth business day from several results.
 """
-
 import pandas as pd
 import datetime
 import calendar
