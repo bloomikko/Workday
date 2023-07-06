@@ -20,7 +20,6 @@ import holidays
 # Variable assignments
 # - takes today's date and forms a date range of currently ongoing month.
 # Calendar has not been formed yet, as holidays must be taken into account.
-
 today = pd.to_datetime("today").date()
 current_year = datetime.datetime.now().year
 current_month = datetime.datetime.now().month
