@@ -9,7 +9,7 @@ import datetime
 import calendar
 import holidays
 
-today = pd.to_datetime("today").date()
+today: = pd.to_datetime("today").date()
 days_in_month = calendar.monthrange(today.year, today.month)[1]
 test_dates = pd.date_range(start=today, periods=200, freq="1M")
 
@@ -17,7 +17,7 @@ for td in test_dates:
     start_date = datetime.datetime(year=td.year, month=td.month, day=1)
     end_date = datetime.datetime(year=td.year, month=td.month, day=days_in_month)
 
-    fin_holidays = []
+    fin_holidays: list = []
     for date in holidays.Finland(years=td.year).items():
         fin_holidays.append(str(date[0]))
 

@@ -29,7 +29,7 @@ end_date = datetime.datetime(year=current_year, month=current_month, day=days_in
 
 # Holidays library can handle Finnish (and other, if needed)holidays
 # - the library is used to form an array of Finnish holidays
-fin_holidays = []
+fin_holidays: list = []
 for date in holidays.Finland(years=current_year).items():
     fin_holidays.append(str(date[0]))
 
