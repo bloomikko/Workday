@@ -6,13 +6,13 @@ The desired number of day can be changed.
 Also handles holidays and the holiday calendar can be changed easily.
 Uses pandas and holidays libraries.
 
-# Features
+## Features
   - Takes current date and compares it whether it is a XXth workday
   - Handles holidays, supports different regional holiday calendars
   - Useful for example for monthly business-critical automation scripts which always happen at certain time
   - Debug file for testing the script
 
-# Example
+## Example
 Assume today is 16th February 2023 - the script checks that current month's fourth business day is 6th February.
 As 16th February != 6th February, the script will not continue.
 Had today been 6th February, the script would have continued to execute the following commands.
